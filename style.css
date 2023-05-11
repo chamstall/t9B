@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+.wrapper {
+    background-image: url("imgs/store.jpg");
+    /* Image par Matthias Kost de Pixabay */
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 900px;
+    width: 100%;
+}
+.roboto {
+    font-family: "Roboto Slab", serif;
+}
+.wrapper .nav-item .nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+.wrapper .nav-item .nav-link.active,
+.wrapper .nav-item .nav-link:focus {
+    background-color: #ffc800 !important;
+}
+.wrapper .nav-item {
+    padding: 5px;
+}
+.wrapper .navbar-brand {
+    font-size: 30px;
+}
+.wrapper .card {
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 16px 1px #fff;
+}
+.wrapper .card img {
+    max-height: 300px;
+    max-width: 300px;
+    margin: auto;
+}
+.watches,
+.cuffsbeads,
+.jewelry {
+    margin-top: 200px;
+}
+.watches .card,
+.cuffsbeads .card,
+.watches .card img,
+.cuffsbeads .card img,
+.jewelry .card,
+.jewelry .card img {
+    border: 0;
+    border-radius: 0;
+}
+.card-img-overlay {
+    height: 70%;
+}
+.watches .card .card-img-overlay,
+.cuffsbeads .card .card-img-overlay,
+.jewelry .card .card-img-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.watches .card .card-img-overlay:hover,
+.cuffsbeads .card .card-img-overlay:hover,
+.jewelry .card .card-img-overlay:hover {
+    background-color: rgba(255, 200, 0, 0.9);
+    opacity: 1;
+}
+.watches .card .modal-dialog,
+.cuffsbeads .card .modal-dialog,
+.jewelry .card .modal-dialog {
+    width: 98%;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 672px) {
+    .watches .card .btn-close {
+        font-size: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .watches .card .btn-close {
+        font-size: 50px;
+    }
+    .watches .card .modal-body h1 {
+        font-size: 70px;
+    }
+}
+.wrapper .delivery .card {
+    margin-top: 200px;
+}
+.form-check-input:checked {
+    background-color: #ffc800;
+    border-color: #ffc800;
+}
+.footer{ 
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 16px 1px #fff;
+    margin-top: 120px;
+}
+.connexion .card,.inscription .card{ 
+    margin-top:200px ;
+}
+.connexion,.inscription{ 
+    min-height: 600px;
+}
