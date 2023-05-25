@@ -22,8 +22,8 @@
         <title>TALL STORE - inscription</title>
     </head>
     <body>
-        <section class="wrapper  inscription">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+        <section class="wrapper inscription">
+            <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
                 <div class="container-fluid">
                     <a
                         class="navbar-brand fw-bold roboto text-warning mt-2"
@@ -32,13 +32,12 @@
                         <em>TALL STORE</em>
                     </a>
                     <button
-                        class="navbar-toggler align-items-center me-4 mt-3 mb-2 text-light"
+                        class="navbar-toggler me-4 mt-3 mb-2 text-light"
                         type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample"
+                        style="background-color: transparent"
                     >
                         MENU<i
                             class="fa-solid fa-bars ms-2"
@@ -46,72 +45,93 @@
                         ></i>
                     </button>
                     <div
-                        class="collapse navbar-collapse justify-content-center"
-                        id="navbarNavDropdown"
+                        class="offcanvas offcanvas-start  bg-dark"
+                        tabindex="-1"
+                        id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel"
                     >
-                        <ul
-                            class="nav nav-pills mb-3 fw-bold mt-4"
-                            id="pills-tab"
-                            role="tablist"
-                        >
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="nav-link "
-                                    id="pills-accueil-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-accueil"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-accueil"
-                                    aria-selected="true"
-                                    onclick="window.location.href='accueil.html';"
-                                >
-                                    Accueil
-                            </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="nav-link"
-                                    id="pills-watches-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-watches"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-watches"
-                                    aria-selected="false"
-                                    onclick="window.location.href='watches.html';"
-                                    >Watches
-                            </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="nav-link"
-                                    id="pills-cuffs&beads-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-cuffs&beads"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-cuffs&beads"
-                                    aria-selected="false"
-                                    onclick="window.location.href='CuffsBeads.html';"
-                                    >Cuffs & Beads
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button
-                                    class="nav-link"
-                                    id="pills-Jewelry-tab"
-                                    data-bs-toggle="pill"
-                                    data-bs-target="#pills-Jewelry"
-                                    type="button"
-                                    role="tab"
-                                    aria-controls="pills-Jewelry"
-                                    aria-selected="false"
-                                    onclick="window.location.href='jewelry.html';"
-                                    >Jewelry
-                                </button>
-                            </li>
-                        </ul>
+                        <div class="offcanvas-header">
+                            <a
+                                class="navbar-brand fw-bold roboto text-warning mt-2"
+                                href="#"
+                            >
+                                <em>TALL STORE</em>
+                            </a>
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul
+                                class="nav nav-pills mb-3 fw-bold mt-4 ms-5 flex-column flex-xl-row"
+                                id="pills-tab"
+                                role="tablist"
+                            >
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="pills-accueil-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-accueil"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-accueil"
+                                        aria-selected="true"
+                                        onclick="window.location.href='accueil.html';"
+                                    >
+                                        Accueil
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="pills-watches-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-watches"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-watches"
+                                        aria-selected="false"
+                                        onclick="window.location.href='watches.html';"
+                                    >
+                                        Watches
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="pills-cuffs&beads-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-cuffs&beads"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-cuffs&beads"
+                                        aria-selected="false"
+                                        onclick="window.location.href='CuffsBeads.html';"
+                                    >
+                                        Cuffs & Beads
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button
+                                        class="nav-link"
+                                        id="pills-Jewelry-tab"
+                                        data-bs-toggle="pill"
+                                        data-bs-target="#pills-Jewelry"
+                                        type="button"
+                                        role="tab"
+                                        aria-controls="pills-Jewelry"
+                                        aria-selected="false"
+                                        onclick="window.location.href='jewelry.html';"
+                                    >
+                                        Jewelry
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="tab-content" id="pills-tabContent">
                             <div
                                 class="tab-pane fade show active"
@@ -184,41 +204,81 @@
             </nav>
             <div class="container pt-5">
                 <div class="col-12 col-md-6 ms-auto me-auto">
-                    <div class="card  p-4">
+                    <div class="card p-4">
                         <div class="card-title text-center">
                             <h2 class="text-light">Sign in</h2>
                         </div>
                         <div class="card-body">
                             <div class="mb-3">
-                                <label for="inputext" class="visually-hidden">Username</label>
-                                <input type="text" class="form-control" id="inputext"  placeholder="Username">
+                                <label for="inputext" class="visually-hidden"
+                                    >Username</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="inputext"
+                                    placeholder="Username"
+                                />
                             </div>
                             <div class="mb-3">
-                                <label for="inputext" class="visually-hidden">Username</label>
-                                <input type="email" class="form-control" id="inputext"  placeholder="Email">
+                                <label for="inputext" class="visually-hidden"
+                                    >Username</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="inputext"
+                                    placeholder="Email"
+                                />
                             </div>
                             <div class="mb-3">
-                                <label for="inputPassword" class="visually-hidden">Password</label>
-                                <input type="password" class="form-control" id="inputPassword" placeholder="password">
+                                <label
+                                    for="inputPassword"
+                                    class="visually-hidden"
+                                    >Password</label
+                                >
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    id="inputPassword"
+                                    placeholder="password"
+                                />
                             </div>
                             <div class="mb-3">
-                                <button type="button" class="btn btn-warning w-100 text-light fw-bold">Sign in</button>
+                                <button
+                                    type="button"
+                                    class="btn btn-warning w-100 text-light fw-bold"
+                                >
+                                    Sign in
+                                </button>
                             </div>
-                            <div class="mb-3 row  gy-3 ">
-                                <div class="col-12 col-md-6 ">
-                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label text-light " for="exampleCheck1"><small>Remember me </small> </label>
+                            <div class="mb-3 row gy-3">
+                                <div class="col-12 col-md-6">
+                                    <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="exampleCheck1"
+                                    />
+                                    <label
+                                        class="form-check-label text-light"
+                                        for="exampleCheck1"
+                                        ><small>Remember me </small>
+                                    </label>
                                 </div>
-                                <div class=" col-12 col-md-6 text-md-end ">
-                                    <a href="" style="text-decoration: none;"> <small>Have already an Account ? login </small> </a>
+                                <div class="col-12 col-md-6 text-md-end">
+                                    <a href="" style="text-decoration: none">
+                                        <small
+                                            >Have already an Account ? login
+                                        </small>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid text-center py-4  text-light footer">
-                <p>Copyright &copy 2023 - CHAMS TALL - All Rights Reserved </p>
+            <div class="container-fluid text-center py-4 text-light footer">
+                <p>Copyright &copy 2023 - CHAMS TALL - All Rights Reserved</p>
             </div>
         </section>
     </body>
